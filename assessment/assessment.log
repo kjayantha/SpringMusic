@@ -1,0 +1,17 @@
+2024-08-07 16:11:33: *****************************************************************************
+2024-08-07 16:11:33: *                     Started SBOM Collection                               *
+2024-08-07 16:11:33: *****************************************************************************
+2024-08-07 16:11:34: Executing command: cd /Users/kjayantha/Documents/springApps/spring-music/self
+2024-08-07 16:11:35: Executing command: ./gradlew -I /Users/kjayantha/Documents/springApps/spring-music/self/assessment/init.gradle cyclonedxBom -PbomOutputDir=/Users/kjayantha/Documents/springApps/spring-music/self/assessment/sbom
+> Task :cyclonedxBom
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.6.2/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 6s
+1 actionable task: 1 executed
+2024-08-07 16:11:44: Executing command: rm -rf /Users/kjayantha/Documents/springApps/spring-music/self/assessment/init.gradle
+2024-08-07 16:11:46: Executing command: rm -rf /Users/kjayantha/Documents/springApps/spring-music/self/assessment/sbom
