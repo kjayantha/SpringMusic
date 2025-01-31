@@ -48,6 +48,16 @@ dependencies {
     implementation "org.webjars:angular-ui:0.4.0-2"
     implementation "org.webjars:angular-ui-bootstrap:0.10.0-1"
     implementation "org.webjars:jquery:2.1.0-2"
+    
+    implementation 'com.wavefront:wavefront-spring-boot-bom:3.2.0'
+    implementation group: 'com.wavefront', name: 'wavefront-spring-boot-starter', version: '3.2.0'
+    implementation group: 'io.micrometer', name: 'micrometer-registry-wavefront', version: '1.14.3'
+    implementation group: 'io.micrometer', name: 'micrometer-tracing-bridge-brave', version: '1.4.2'
+    implementation group: 'io.micrometer', name: 'micrometer-tracing-reporter-wavefront', version: '1.4.2'
+    
+    
+    
+    
 
     // Oracle - uncomment one of the following after placing driver in ./libs
     // compile files('libs/ojdbc8.jar')
