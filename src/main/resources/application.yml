@@ -10,7 +10,10 @@ management:
   endpoint:
     health:
       show-details: always
-
+  tracing:
+    sampling:
+      probability: 0.5
+        
 ---
 spring:
   config:
