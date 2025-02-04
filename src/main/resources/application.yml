@@ -1,6 +1,8 @@
 spring:
   jpa:
     generate-ddl: true
+  application:
+    name: spring-music
 
 management:
   endpoints:
@@ -13,7 +15,17 @@ management:
   tracing:
     sampling:
       probability: 0.5
-        
+  wavefront:
+    application:
+      name: MY-APPLICATION
+      service-name: MY-SERVICE
+      custom-tags:
+        instance_guid: ${CF_INSTANCE_GUID}
+    api-token: 1111-23this-45is-678a-faketoken
+    uri: http://telegraf.hub-collector.service.internal:8765
+  server:
+    port: 8080
+
 ---
 spring:
   config:
